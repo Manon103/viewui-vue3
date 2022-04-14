@@ -1,0 +1,23 @@
+{
+  "name": "iview-vue3",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "site": "./node_modules/vite/bin/vite.js build site",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@vitejs/plugin-vue": "^2.3.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0",
+    "vue-tsc": "^0.29.8"
+  }
+}
