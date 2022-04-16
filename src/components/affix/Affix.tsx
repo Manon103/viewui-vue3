@@ -89,7 +89,6 @@ const Affix = defineComponent({
 
     const handleScroll = () => {
       const scrollTop = getScroll(window, true);
-      console.log(point);
       
       const elOffset = getOffset(affixRoot.value);
       const windowHeight = window.innerHeight;
