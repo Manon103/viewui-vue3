@@ -21,11 +21,7 @@
 </template>
 
 <script>
-import Affix from '/src/components/affix/Affix';
 export default {
-  components: {
-    Affix,
-  },
   methods: {
     change(flag) {
       console.log(flag);
