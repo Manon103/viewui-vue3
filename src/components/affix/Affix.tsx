@@ -10,6 +10,8 @@ import {
   toRefs,
 } from "vue";
 
+import { withInstall } from "../../utils/install";
+
 function getScroll(target: any, top?: boolean) {
   const prop = top ? "pageYOffset" : "pageXOffset";
   const method = top ? "scrollTop" : "scrollLeft";
@@ -176,8 +178,4 @@ const Affix = defineComponent({
   },
 });
 
-Affix.install = (app: App) => {
-  app.component(Affix.name, Affix);
-};
-
-export default Affix;
+export default withInstall(Affix);
